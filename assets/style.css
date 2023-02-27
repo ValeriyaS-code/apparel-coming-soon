@@ -13,8 +13,13 @@
     margin-bottom: 6rem;
 }
 
+.picture-mobile {
+    display: none;
+}
+
 .info {
     margin: 6rem 10rem 0 8rem;
+    flex-direction: column;
 }
 
 .info h1 {
@@ -52,6 +57,7 @@ input {
     flex-grow:2;
     border:none;
     border-radius: 3rem;
+    padding-left: 1.5rem;
 }
   
 input:focus {
@@ -63,7 +69,6 @@ input::placeholder {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 0.9rem;
-    padding-left: 1.5rem;
 }
 
 button {
@@ -75,3 +80,31 @@ button {
 #btn {
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .info {
+        margin: 3rem 4rem 3rem 4rem;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .picture-mobile {
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    .info p {
+        padding-right: 2rem;
+    }
+
+    .form {
+        width: 22rem;
+        margin-bottom: 5rem;
