@@ -42,7 +42,7 @@
     padding-right: 7rem;
     margin-bottom: 3rem;
 }
-  
+
 input {
     flex-grow:2;
     border:none;
@@ -53,6 +53,7 @@ input {
     border-radius: 3rem;
     width: 27rem;
     height: 3.5rem;
+    position: absolute;
 }
   
 input:focus {
@@ -115,8 +116,12 @@ input::placeholder {
         padding-right: 2rem;
     }
 
-    .form {
+    input {
         width: 22rem;
         margin-bottom: 5rem;
+    }
+
+    #btn {
+        margin-left: 17rem;
     }
 }

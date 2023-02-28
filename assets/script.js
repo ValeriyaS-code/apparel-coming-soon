@@ -12,13 +12,14 @@ button.addEventListener('click', function() {
     return re.test(String(email).toLowerCase());
   }
 
-  button.addEventListener('click', function() {
+  button.addEventListener("click", function() {
     var email = emailField.value;
     if (validateEmail(email)) {
       hidden.innerHTML = "Thank you for providing your email address!";
 
       const changeColorGood = document.getElementById("hidden");
         changeColorGood.style.color = "hsl(0, 36%, 70%)";
+
     } else {
         const changeColor = document.getElementById("email");
         changeColor.style.border = "1px solid hsl(354, 100%, 66%)";
